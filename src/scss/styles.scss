@@ -1,0 +1,165 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+$font_color: #222;
+$highlight_color: #24a7e0;
+
+$font_huge: 24px;
+$font_big: 20px;
+$font_medium: 16px;
+$font_regular: 13px;
+
+$time_column_width: 110px;
+
+$S: 4px;
+$SM: 8px;
+$M: 12px;
+$ML: 16px;
+$L: 20px;
+$XL: 24px;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #999999;
+  display: inline;
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    display: flex;
+    padding: $M;
+    color: $font_color;
+    font-family: "Lato", sans-serif;
+    font-size: $font_regular;
+
+    .overviewColumn {
+      width: 30%;
+      height: 100%;
+      padding-right: $SM;
+
+      .candidateName {
+        font-size: $font_huge;
+        margin-bottom: $S;
+        color: $highlight_color;
+      }
+
+      .position {
+        font-size: $font_big;
+      }
+
+      .company {
+        font-size: $font_big;
+        margin-bottom: $M;
+      }
+
+      .contact {
+        margin-bottom: $M;
+
+        .contactRow {
+          display: flex;
+          align-items: center;
+
+          .contactImg {
+
+          }
+
+          .contactText {
+
+          }
+        }
+      }
+
+      .columnSegment {
+        .header {
+          display: flex;
+          align-items: center;
+          margin-bottom: $SM;
+
+          .headerContent {
+            font-size: $font_big;
+            margin-right: $S;
+          }
+
+          .headerLine {
+            flex-grow: 1;
+            border-bottom: solid 1px $font_color;
+          }
+        }
+      }
+    }
+
+    .letterColumn {
+      width: 70%;
+      height: 100%;
+
+      .letterSegment {
+        margin-bottom: $L;
+
+        .header {
+          font-size: $font_huge;
+          font-weight: bold;
+          margin-bottom: $SM;
+
+          .highlight {
+            color: $highlight_color;
+          }
+        }
+
+        .titleBar {
+          display: flex;
+          margin-bottom: $SM;
+
+          .time {
+            width: $time_column_width;
+          }
+
+          .title {
+            font-weight: bold;
+            flex-grow: 1;
+          }
+
+          .position {
+            flex-grow: 1;
+            text-align: end;
+          }
+        }
+
+        .letterSegmentEntry {
+          margin-left: $time_column_width;
+          margin-bottom: $M;
+
+          .entryText {
+            margin-left: $M;
+            margin-bottom: $S;
+          }
+
+          .entrySummary {
+            display: flex;
+            margin-left: $M;
+
+            .summaryHeader {
+              white-space: nowrap;
+              margin-right: $S;
+            }
+
+            .summaryContent {
+              font-style: italic;
+            }
+          }
+        }
+
+        .segmentText {
+
+        }
+      }
+    }
+  }
+}

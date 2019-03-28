@@ -1,0 +1,84 @@
+@page {
+  size: A4;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #999999;
+  display: inline; }
+  body .page {
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    display: flex;
+    padding: 12px;
+    color: #222;
+    font-family: "Lato", sans-serif;
+    font-size: 13px; }
+    body .page .overviewColumn {
+      width: 30%;
+      height: 100%;
+      padding-right: 8px; }
+      body .page .overviewColumn .candidateName {
+        font-size: 24px;
+        margin-bottom: 4px;
+        color: #24a7e0; }
+      body .page .overviewColumn .position {
+        font-size: 20px; }
+      body .page .overviewColumn .company {
+        font-size: 20px;
+        margin-bottom: 12px; }
+      body .page .overviewColumn .contact {
+        margin-bottom: 12px; }
+        body .page .overviewColumn .contact .contactRow {
+          display: flex;
+          align-items: center; }
+      body .page .overviewColumn .columnSegment .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px; }
+        body .page .overviewColumn .columnSegment .header .headerContent {
+          font-size: 20px;
+          margin-right: 4px; }
+        body .page .overviewColumn .columnSegment .header .headerLine {
+          flex-grow: 1;
+          border-bottom: solid 1px #222; }
+    body .page .letterColumn {
+      width: 70%;
+      height: 100%; }
+      body .page .letterColumn .letterSegment {
+        margin-bottom: 20px; }
+        body .page .letterColumn .letterSegment .header {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 8px; }
+          body .page .letterColumn .letterSegment .header .highlight {
+            color: #24a7e0; }
+        body .page .letterColumn .letterSegment .titleBar {
+          display: flex;
+          margin-bottom: 8px; }
+          body .page .letterColumn .letterSegment .titleBar .time {
+            width: 110px; }
+          body .page .letterColumn .letterSegment .titleBar .title {
+            font-weight: bold;
+            flex-grow: 1; }
+          body .page .letterColumn .letterSegment .titleBar .position {
+            flex-grow: 1;
+            text-align: end; }
+        body .page .letterColumn .letterSegment .letterSegmentEntry {
+          margin-left: 110px;
+          margin-bottom: 12px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .entryText {
+            margin-left: 12px;
+            margin-bottom: 4px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary {
+            display: flex;
+            margin-left: 12px; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary .summaryHeader {
+              white-space: nowrap;
+              margin-right: 4px; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary .summaryContent {
+              font-style: italic; }

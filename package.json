@@ -1,0 +1,10 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "scripts": {
+    "compile sass": "node-sass --watch src/scss -o src/css"
+  },
+  "dependencies": {
+    "node-sass": "*"
+  }
+}
