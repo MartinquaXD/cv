@@ -49,6 +49,8 @@ body {
             background-repeat: no-repeat;
             margin: 4px;
             margin-right: 8px; }
+            body .page .overviewColumn .contact .contactRow .contactImg:hover {
+              outline: none; }
             body .page .overviewColumn .contact .contactRow .contactImg.telephone {
               background-image: url("../icons/phone.svg"); }
             body .page .overviewColumn .contact .contactRow .contactImg.email {

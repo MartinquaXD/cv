@@ -83,6 +83,10 @@ body {
             margin: $S;
             margin-right: $SM;
 
+            &:hover {
+              outline: none;
+            }
+
             &.telephone {
               background-image: url("../icons/phone.svg");
             }
