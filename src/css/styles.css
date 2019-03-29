@@ -7,48 +7,102 @@
 
 body {
   margin: 0;
-  background-color: #999999;
-  display: inline; }
+  display: inline;
+  background-color: #515558; }
   body .page {
     width: 210mm;
     height: 297mm;
-    background-color: white;
     display: flex;
-    padding: 12px;
     color: #222;
     font-family: "Lato", sans-serif;
-    font-size: 13px; }
+    font-size: 13px;
+    margin: 0 auto;
+    background-color: #e8e8e8; }
     body .page .overviewColumn {
-      width: 30%;
+      width: 35%;
       height: 100%;
-      padding-right: 8px; }
+      background-color: #2c2c2c;
+      padding: 12px;
+      color: #ffb045; }
       body .page .overviewColumn .candidateName {
         font-size: 24px;
-        margin-bottom: 4px;
-        color: #24a7e0; }
+        margin-bottom: 20px;
+        color: #ffb045; }
       body .page .overviewColumn .position {
+        color: white;
         font-size: 20px; }
       body .page .overviewColumn .company {
-        font-size: 20px;
-        margin-bottom: 12px; }
+        color: white;
+        font-size: 16px;
+        margin-bottom: 35px; }
       body .page .overviewColumn .contact {
-        margin-bottom: 12px; }
+        color: white;
+        margin-bottom: 35px; }
         body .page .overviewColumn .contact .contactRow {
           display: flex;
           align-items: center; }
-      body .page .overviewColumn .columnSegment .header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 8px; }
-        body .page .overviewColumn .columnSegment .header .headerContent {
-          font-size: 20px;
-          margin-right: 4px; }
-        body .page .overviewColumn .columnSegment .header .headerLine {
-          flex-grow: 1;
-          border-bottom: solid 1px #222; }
+          body .page .overviewColumn .contact .contactRow .contactImg {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 4px;
+            margin-right: 8px; }
+            body .page .overviewColumn .contact .contactRow .contactImg.telephone {
+              background-image: url("../icons/phone.svg"); }
+            body .page .overviewColumn .contact .contactRow .contactImg.email {
+              background-image: url("../icons/envelope.svg"); }
+            body .page .overviewColumn .contact .contactRow .contactImg.linkedIn {
+              background-image: url("../icons/linkedin.svg"); }
+          body .page .overviewColumn .contact .contactRow .contactText {
+            color: white;
+            text-decoration: none; }
+          body .page .overviewColumn .contact .contactRow .link {
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 12px;
+            background-image: url("../icons/link.svg"); }
+      body .page .overviewColumn .columnSegment {
+        margin-bottom: 35px; }
+        body .page .overviewColumn .columnSegment .header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px; }
+          body .page .overviewColumn .columnSegment .header .headerContent {
+            font-size: 20px;
+            margin-right: 4px; }
+          body .page .overviewColumn .columnSegment .header .headerLine {
+            flex-grow: 1;
+            border-bottom: solid 1px #ffb045; }
+        body .page .overviewColumn .columnSegment .columnEntry {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+          margin-left: 12px;
+          color: white; }
+          body .page .overviewColumn .columnSegment .columnEntry .entryIcon {
+            margin-right: 4px;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat; }
+            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.typescript {
+              background-image: url("../icons/typescript.svg"); }
+            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.nodeJs {
+              background-image: url("../icons/node.svg"); }
+            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.cpp {
+              background-image: url("../icons/c++.svg"); }
+            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.rust {
+              background-image: url("../icons/rust.svg"); }
+          body .page .overviewColumn .columnSegment .columnEntry .entryText {
+            font-size: 16px; }
     body .page .letterColumn {
-      width: 70%;
-      height: 100%; }
+      width: 65%;
+      height: 100%;
+      padding: 12px; }
       body .page .letterColumn .letterSegment {
         margin-bottom: 20px; }
         body .page .letterColumn .letterSegment .header {
@@ -56,7 +110,7 @@ body {
           font-weight: bold;
           margin-bottom: 8px; }
           body .page .letterColumn .letterSegment .header .highlight {
-            color: #24a7e0; }
+            color: #ffb045; }
         body .page .letterColumn .letterSegment .titleBar {
           display: flex;
           margin-bottom: 8px; }

@@ -4,7 +4,8 @@
 }
 
 $font_color: #222;
-$highlight_color: #24a7e0;
+$highlight_color: #ffb045;
+$background_color: #2c2c2c;
 
 $font_huge: 24px;
 $font_big: 20px;
@@ -19,7 +20,8 @@ $M: 12px;
 $ML: 16px;
 $L: 20px;
 $XL: 24px;
-
+$XXL: 35px;
+$XXXL: 50px;
 
 * {
   box-sizing: border-box;
@@ -27,57 +29,93 @@ $XL: 24px;
 
 body {
   margin: 0;
-  background-color: #999999;
   display: inline;
+  background-color: #515558;
 
   .page {
     width: 210mm;
     height: 297mm;
-    background-color: white;
     display: flex;
-    padding: $M;
     color: $font_color;
     font-family: "Lato", sans-serif;
     font-size: $font_regular;
+    margin: 0 auto;
+    background-color: #e8e8e8;
 
     .overviewColumn {
-      width: 30%;
+      width: 35%;
       height: 100%;
-      padding-right: $SM;
+      background-color: $background_color;
+      padding: $M;
+      color: $highlight_color;
 
       .candidateName {
         font-size: $font_huge;
-        margin-bottom: $S;
+        margin-bottom: $L;
         color: $highlight_color;
       }
 
       .position {
+        color: white;
         font-size: $font_big;
       }
 
       .company {
-        font-size: $font_big;
-        margin-bottom: $M;
+        color: white;
+        font-size: $font_medium;
+        margin-bottom: $XXL;
       }
 
       .contact {
-        margin-bottom: $M;
+        color: white;
+        margin-bottom: $XXL;
 
         .contactRow {
           display: flex;
           align-items: center;
 
           .contactImg {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: $S;
+            margin-right: $SM;
 
+            &.telephone {
+              background-image: url("../icons/phone.svg");
+            }
+
+            &.email {
+              background-image: url("../icons/envelope.svg");
+            }
+
+            &.linkedIn {
+              background-image: url("../icons/linkedin.svg");
+            }
           }
 
           .contactText {
+            color: white;
+            text-decoration: none;
+          }
 
+          .link {
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: $M;
+            background-image: url("../icons/link.svg");
           }
         }
       }
 
       .columnSegment {
+        margin-bottom: $XXL;
+
         .header {
           display: flex;
           align-items: center;
@@ -90,15 +128,54 @@ body {
 
           .headerLine {
             flex-grow: 1;
-            border-bottom: solid 1px $font_color;
+            border-bottom: solid 1px $highlight_color;
+          }
+        }
+
+        .columnEntry {
+          display: flex;
+          align-items: center;
+          margin-bottom: $SM;
+          margin-left: $M;
+          color: white;
+
+          .entryIcon {
+            margin-right: $S;
+            //width: 20px;
+            //height: 20px;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &.typescript {
+              background-image: url("../icons/typescript.svg");
+            }
+
+            &.nodeJs {
+              background-image: url("../icons/node.svg");
+            }
+
+            &.cpp {
+              background-image: url("../icons/c++.svg");
+            }
+
+            &.rust{
+              background-image: url("../icons/rust.svg");
+            }
+
+          }
+
+          .entryText {
+            font-size: $font_medium;
           }
         }
       }
     }
 
     .letterColumn {
-      width: 70%;
+      width: 65%;
       height: 100%;
+      padding: $M;
 
       .letterSegment {
         margin-bottom: $L;
