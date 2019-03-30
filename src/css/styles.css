@@ -5,6 +5,14 @@
 * {
   box-sizing: border-box; }
 
+.link {
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icons/link.svg"); }
+
 body {
   margin: 0;
   display: inline;
@@ -61,13 +69,7 @@ body {
             color: white;
             text-decoration: none; }
           body .page .overviewColumn .contact .contactRow .link {
-            width: 10px;
-            height: 10px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-left: 12px;
-            background-image: url("../icons/link.svg"); }
+            margin-left: 12px; }
       body .page .overviewColumn .columnSegment {
         margin-bottom: 35px; }
         body .page .overviewColumn .columnSegment .header {
@@ -80,27 +82,13 @@ body {
           body .page .overviewColumn .columnSegment .header .headerLine {
             flex-grow: 1;
             border-bottom: solid 1px #ffb045; }
-        body .page .overviewColumn .columnSegment .columnEntry {
+        body .page .overviewColumn .columnSegment .entryText {
           display: flex;
           align-items: center;
           margin-bottom: 8px;
-          margin-left: 12px;
-          color: white; }
-          body .page .overviewColumn .columnSegment .columnEntry .entryIcon {
-            margin-right: 4px;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat; }
-            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.typescript {
-              background-image: url("../icons/typescript.svg"); }
-            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.nodeJs {
-              background-image: url("../icons/node.svg"); }
-            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.cpp {
-              background-image: url("../icons/c++.svg"); }
-            body .page .overviewColumn .columnSegment .columnEntry .entryIcon.rust {
-              background-image: url("../icons/rust.svg"); }
-          body .page .overviewColumn .columnSegment .columnEntry .entryText {
-            font-size: 16px; }
+          margin-left: 24px;
+          color: white;
+          font-size: 16px; }
     body .page .letterColumn {
       width: 65%;
       height: 100%;
@@ -125,16 +113,30 @@ body {
             flex-grow: 1;
             text-align: end; }
         body .page .letterColumn .letterSegment .letterSegmentEntry {
-          margin-left: 110px;
-          margin-bottom: 12px; }
-          body .page .letterColumn .letterSegment .letterSegmentEntry .entryText {
-            margin-left: 12px;
-            margin-bottom: 4px; }
-          body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary {
+          margin-bottom: 35px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .segmentTitle {
+            font-weight: bold;
+            margin-bottom: 8px;
             display: flex;
-            margin-left: 12px; }
-            body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary .summaryHeader {
-              white-space: nowrap;
-              margin-right: 4px; }
-            body .page .letterColumn .letterSegment .letterSegmentEntry .entrySummary .summaryContent {
+            align-items: center;
+            text-decoration: none;
+            color: #222; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .segmentTitle .link {
+              margin-left: 8px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .segmentDescription {
+            color: #666;
+            margin-bottom: 8px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .segmentBulletPoints {
+            margin-left: 12px;
+            margin-bottom: 8px;
+            padding-inline-start: 12px; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .segmentBulletPoints .bulletPoint {
+              margin-bottom: 4px; }
+          body .page .letterColumn .letterSegment .letterSegmentEntry .usedTechnologies {
+            display: flex;
+            margin-left: 24px; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .usedTechnologies .techTitle {
+              margin-right: 12px;
+              white-space: nowrap; }
+            body .page .letterColumn .letterSegment .letterSegmentEntry .usedTechnologies .technologies {
               font-style: italic; }

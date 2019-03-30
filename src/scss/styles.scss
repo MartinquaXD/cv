@@ -27,6 +27,15 @@ $XXXL: 50px;
   box-sizing: border-box;
 }
 
+.link {
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icons/link.svg");
+}
+
 body {
   margin: 0;
   display: inline;
@@ -106,13 +115,7 @@ body {
           }
 
           .link {
-            width: 10px;
-            height: 10px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
             margin-left: $M;
-            background-image: url("../icons/link.svg");
           }
         }
       }
@@ -136,42 +139,13 @@ body {
           }
         }
 
-        .columnEntry {
+        .entryText {
           display: flex;
           align-items: center;
           margin-bottom: $SM;
-          margin-left: $M;
+          margin-left: $XL;
           color: white;
-
-          .entryIcon {
-            margin-right: $S;
-            //width: 20px;
-            //height: 20px;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-
-            &.typescript {
-              background-image: url("../icons/typescript.svg");
-            }
-
-            &.nodeJs {
-              background-image: url("../icons/node.svg");
-            }
-
-            &.cpp {
-              background-image: url("../icons/c++.svg");
-            }
-
-            &.rust{
-              background-image: url("../icons/rust.svg");
-            }
-
-          }
-
-          .entryText {
-            font-size: $font_medium;
-          }
+          font-size: $font_medium;
         }
       }
     }
@@ -214,24 +188,46 @@ body {
         }
 
         .letterSegmentEntry {
-          margin-left: $time_column_width;
-          margin-bottom: $M;
+          margin-bottom: $XXL;
 
-          .entryText {
-            margin-left: $M;
-            margin-bottom: $S;
+          .segmentTitle {
+            font-weight: bold;
+            margin-bottom: $SM;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $font_color;
+
+            .link {
+              margin-left: $SM;
+            }
           }
 
-          .entrySummary {
-            display: flex;
-            margin-left: $M;
+          .segmentDescription {
+            color: #666;
+            margin-bottom: $SM;
+          }
 
-            .summaryHeader {
+          .segmentBulletPoints {
+            margin-left: $M;
+            margin-bottom: $SM;
+            padding-inline-start: $M;
+
+            .bulletPoint {
+              margin-bottom: $S;
+            }
+          }
+
+          .usedTechnologies {
+            display: flex;
+            margin-left: $XL;
+
+            .techTitle {
+              margin-right: $M;
               white-space: nowrap;
-              margin-right: $S;
             }
 
-            .summaryContent {
+            .technologies {
               font-style: italic;
             }
           }
