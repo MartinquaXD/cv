@@ -67,6 +67,7 @@ body {
       .position {
         color: white;
         font-size: $font_big;
+        margin-bottom: $SM;
       }
 
       .company {
@@ -188,7 +189,7 @@ body {
         }
 
         .letterSegmentEntry {
-          margin-bottom: $XXL;
+          margin-bottom: 30px;
 
           .segmentTitle {
             font-weight: bold;
@@ -231,10 +232,6 @@ body {
               font-style: italic;
             }
           }
-        }
-
-        .segmentText {
-
         }
       }
     }

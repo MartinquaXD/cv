@@ -74,6 +74,7 @@
                 <div class="headerLine"></div>
             </div>
             <div class="entryText">Git</div>
+            <div class="entryText">Jira/Kanban</div>
             <div class="entryText">Englischkenntnisse</div>
             <div class="entryText">Jetbrains IDEs</div>
             <div class="entryText">Interessiert an Performance</div>
@@ -85,17 +86,16 @@
                 <span class="highlight">Umg</span><span>esetzte Projekte</span>
             </div>
             <div class="letterSegmentEntry">
-                <div class="segmentTitle">Testen einer C++ Kommunikationsschnittstelle zu einem NodeJS Server</div>
-                <div class="segmentDescription">Diese Schnittstelle abstrahiert die Kommunikation mit unseren Servern
-                    für iOS- und Androidapps.
+                <div class="segmentTitle">Testen firmeneigener C++ Kommunikationsschnittstelle zu einem NodeJS Server</div>
+                <div class="segmentDescription">Diese Schnittstelle abstrahiert die clientseitige Kommunikation sowie
+                    das Caching empfangener Daten und wurde hauptsächlich in iOS- und Androidapps verwendet.
                 </div>
                 <ul class="segmentBulletPoints">
                     <li class="bulletPoint">Starke Verbesserung der Konnektivität sowie Stabilität der Kommunikation
-                        durch
-                        Reduzierung des Paketloss
+                        durch sinnvollere Fehlerbehandlung beim Verlust der Verbindung zum Server
                     </li>
-                    <li class="bulletPoint">Schreiben von Blackbox-, sowie Performance- und Unittest</li>
-                    <li class="bulletPoint">Aufbereitung des Codes mit Umsetzung bekannter Best-Practicies</li>
+                    <li class="bulletPoint">Schreiben von Blackbox-, sowie Performance- und Unittests</li>
+                    <li class="bulletPoint">Aufbereitung des Codes mit Umsetzung bekannter Best-Practices</li>
                 </ul>
                 <div class="usedTechnologies">
                     <div class="techTitle">genutzte Technologien:</div>
@@ -103,23 +103,23 @@
                 </div>
             </div>
             <div class="letterSegmentEntry">
-                <div class="segmentTitle">Weiterentwicklung der firmeneigenen Server- und Frontendlogik</div>
-                <div class="segmentDescription">Dieser Code realisiert sowohl die Auslieferung sowie das automatische
-                    updaten
-                    angefragter Serverdaten in einem NodeJS Server.
+                <div class="segmentTitle">Weiterentwicklung firmeneigener Server- und Frontendlogik</div>
+                <div class="segmentDescription">Dieser Code realisiert die Auslieferung sowie das automatische
+                    updaten clientseitig angefragter Serverdaten in einem NodeJS Server.
                 </div>
                 <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Eliminierung jeglicher Inkonsistenzen zwischen Datenmodell und dessen
-                        Implementierung im Server durch Entwicklung eines einzelnen, eleganten Schemas welches sowohl
-                        genutzt werden kann um Serverstruktur zu beschreiben, als auch Datentypen im Frontend korrekt
-                        beschreibt
+                    <li class="bulletPoint">
+                        Eliminierung jeglicher Inkonsistenzen zwischen Datenmodell und dessen
+                        Implementierung im Server während laufender Entwicklung durch Entwurf eines einzelnen,
+                        eleganten Schemas welches sowohl genutzt werden kann um Serverstrukturen zu beschreiben, als
+                        auch Datentypen im Frontend korrekt repräsentiert
                     </li>
                     <li class="bulletPoint">
                         Beschleunigung der Serverentwicklung und Reduzierung von Fehlern mit Serverdaten im Frontend
-                        mittels besagtem Schema
+                        indem das besagte Schema repetetiven Code generiert
                     </li>
-                    <li class="bulletPoint">Integration eines Testframeworks um Tests ganzheitlicher Abläufe zu
-                        ermöglichen
+                    <li class="bulletPoint">
+                        Integration eines Testframeworks um Tests ganzheitlicher Abläufe vom Client aus zu ermöglichen
                     </li>
                     <li class="bulletPoint">Übersetzung der JavaScript Codebase auf TypeScript</li>
                 </ul>
@@ -129,16 +129,19 @@
                 </div>
             </div>
             <div class="letterSegmentEntry">
-                <div class="segmentTitle">Internes Datenbanktool für einen großen Luftfahrtanbieter</div>
+                <div class="segmentTitle">Datenbanktool für einen großen Luftfahrtanbieter</div>
                 <div class="segmentDescription">Die Anforderung war eine Datenbank mit ca. 5 Millionen Einträgen
-                    performant und komfortable im Web durchsuchen zu können.
+                    performant und komfortabel mit Freitext und logischen Operationen im Web durchsuchen zu können.
                 </div>
                 <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Überführung des alten Datenmodells in ein neues Datenmodell, welches besser
-                        für Suchanfragen geeignet ist
+                    <li class="bulletPoint">Design eines neuen Datenmodells, welches alle Altdaten beinhaltet, aber
+                        besser mit Freitext zu durchsuchen ist
+                    </li>
+                    <li>Implementierung der Suchlogik im Backend sowie Entwurf eines natürlichen User-Interfaces im
+                        Frontend
                     </li>
                     <li class="bulletPoint">
-                        Reduzierung eines kompletten Datenimports in die neue Struktur von 10 auf nur noch 2 Stunden
+                        Beschleunigung des Datenimports von Altdaten in die neue Struktur um 80%
                     </li>
                 </ul>
                 <div class="usedTechnologies">
@@ -147,16 +150,16 @@
                 </div>
             </div>
             <div class="letterSegmentEntry">
-                <a class="segmentTitle" href="https://appbase.hamburg" target="_blank">Vollständige Umsetzung der
-                    Homepage von Appbase
-                    Hamburg
+                <a class="segmentTitle" href="https://appbase.hamburg" target="_blank">
+                    Homepage von Appbase Hamburg
                     <div class="link"></div>
                 </a>
-                <div class="segmentDescription">Die neue Homepage sollte Kunden direkt demonstrieren welchen Grad von
-                    UI-Komplexität wir im Web umsetzen können.
+                <div class="segmentDescription">Die neue Homepage sollte Kunden einen Vorgeschmack davon bieten, welchen
+                    Grad an Komplexität Appbase Hamburg sicher in einem User-Interface umsetzen kann.
                 </div>
                 <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Umsetzung des anspruchsvollen User-Interfaces und dessen Mobil- und Performanceoptimierung
+                    <li class="bulletPoint">
+                        Umsetzung des anspruchsvollen User-Interfaces und dessen Mobil- sowie Performanceoptimierung
                     </li>
                     <li class="bulletPoint">
                         Entwicklung des dahinter liegenden Content-Management-Systems
@@ -164,7 +167,7 @@
                 </ul>
                 <div class="usedTechnologies">
                     <div class="techTitle">genutzte Technologien:</div>
-                    <div class="technologies">JavaScript, React, SASS</div>
+                    <div class="technologies">JavaScript, React, SASS, NodeJS</div>
                 </div>
             </div>
         </div>
