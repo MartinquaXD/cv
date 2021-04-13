@@ -11,7 +11,7 @@
     <div class="overviewColumn">
         <div class="candidateName">Martin Beckmann</div>
         <div class="position">Softwareentwickler</div>
-        <div class="company">Allrounder mit Fokus auf<br>Webentwicklung</div>
+        <div class="company">Fullstack mit Fokus auf<br>Backendentwicklung</div>
         <div class="contact">
             <div class="contactRow">
                 <div class="contactImg telephone"></div>
@@ -39,8 +39,8 @@
                 <div class="headerContent">Web Development</div>
                 <div class="headerLine"></div>
             </div>
-            <div class="entryText">TypeScript / JavaScript</div>
-            <div class="entryText">React / Redux</div>
+            <div class="entryText">TypeScript</div>
+            <div class="entryText">React + Redux</div>
             <div class="entryText">Node.js</div>
             <div class="entryText">HTML5 / Sass</div>
         </div>
@@ -51,6 +51,7 @@
             </div>
             <div class="entryText">Rust</div>
             <div class="entryText">C++</div>
+            <div class="entryText">Qt</div>
         </div>
         <div class="columnSegment">
             <div class="header">
@@ -80,7 +81,6 @@
             <div class="entryText">Englischkenntnisse</div>
             <div class="entryText">Git</div>
             <div class="entryText">Jira / Kanban</div>
-            <div class="entryText">Jetbrains IDEs</div>
         </div>
     </div>
     <div class="letterColumn">
@@ -89,39 +89,38 @@
                 <span class="highlight">Umg</span><span>esetzte Projekte</span>
             </div>
             <div class="letterSegmentEntry">
-                <div class="segmentTitle">Testen und Weiterentwicklung einer C++ Netzwerkkommunikationsschnittstelle zu
-                    einem Node.js Server
-                </div>
-                <div class="segmentDescription">Diese Schnittstelle abstrahiert die clientseitige Kommunikation sowie
-                    das Caching empfangener Daten und wurde hauptsächlich in iOS- und Androidapps verwendet.
+                <div class="segmentTitle">Eigenmotivierte Evaluierung von Rust als Alternative für eine Backendkomponente</div>
+                <div class="segmentDescription">Um den Performanceoverhead von Node.js zu messen wurde ein existierender Server
+                    nochmals in Rust mit Tokio implementiert.
                 </div>
                 <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Behebung bekannter Konnektivitätsprobleme</li>
-                    <li class="bulletPoint">Schreiben von Integrations- und Unittests</li>
-                    <li class="bulletPoint">Aufbereitung des Codes mit Umsetzung bekannter Best-Practices</li>
-                </ul>
-                <div class="usedTechnologies">
-                    <div class="techTitle">genutzte Technologien:</div>
-                    <div class="technologies">C++ 14, CMake, Websockets</div>
-                </div>
-            </div>
-            <div class="letterSegmentEntry">
-                <div class="segmentTitle">Evaluierung von Rust als Alternative für Backendframeworks</div>
-                <div class="segmentDescription">Als Test wurde eine Node.js Serverkomponente zu Rust portiert und, falls
-                    es die Sprache nicht anders erlaubte, gewisse Umstrukturierungen vorgenommen.
-                </div>
-                <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Bis zu 50% reduzierte Antwortzeiten des Servers</li>
+                    <li class="bulletPoint">Bis zu 50% reduzierte Latenz</li>
                     <li class="bulletPoint">Entfernung der V8-Engine und damit verbunden reduzierte RAM-Auslastung, Binärgröße, Startzeit und genutzte Prozessorzeit</li>
                     <li class="bulletPoint">Schaffen einer Basis für Support von Multithreading</li>
                 </ul>
                 <div class="usedTechnologies">
                     <div class="techTitle">genutzte Technologien:</div>
-                    <div class="technologies">Rust, Tokio (Async IO), Websockets</div>
+                    <div class="technologies">Rust, Tokio, Websockets</div>
                 </div>
             </div>
             <div class="letterSegmentEntry">
-                <div class="segmentTitle">Konzeptionierung und Entwicklung diverser Entwicklungstools</div>
+                <div class="segmentTitle">Weiterentwicklung eines nativen Caching Systems fuer Android- und iOS-Apps
+                </div>
+                <div class="segmentDescription">Diese Komponente abstrahiert die Netzwerkkommunikation der Apps mit dem Backend sowie
+                    das Caching empfangener Daten.
+                </div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">Behebung bekannter Konnektivitätsprobleme</li>
+                    <li class="bulletPoint">Implementierung fr&uuml;hzeitiger Auslieferung teilweise gecachter Anfragen</li>
+                    <li class="bulletPoint">Schreiben von Integrations- und Unittests</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">genutzte Technologien:</div>
+                    <div class="technologies">C++ 14, Websockets</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Konzeptionierung und Implementierung diverser Entwicklungstools</div>
                 <div class="segmentDescription">Um den Entwicklungsablauf zu beschleunigen und übliche Fehler zu
                     minimieren, wurden teilweise neue Tools geplant und implementiert, sowie bestehende Tools weiterentwickelt.
                 </div>
@@ -139,6 +138,20 @@
                 </div>
             </div>
             <div class="letterSegmentEntry">
+                <div class="segmentTitle">Planung und Entwicklung eines Floating-License-Servers</div>
+                <div class="segmentDescription">Um die unrechtm&auml;&szlig;ige Nutzung vom Squish GUI Testtool zu minimieren,
+                    wurden alt bekannte Lizenschl&uuml;ssel durch einen Lizenzserver ersetzt.</div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">Refactoring einiger Bereiche einer gro&szlig;en Legacy Codebase</li>
+                    <li class="bulletPoint">Entwicklung neuen Codes kompatibel mit einigen alten und exotischeren Compilern und Betriebssystemen</li>
+                    <li class="bulletPoint">Steigerung des Umsatzes da Lizenzen nicht mehr kopiert werden koennen</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">genutzte Technologien:</div>
+                    <div class="technologies">C++ 11, C++98, Qt 5</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
                 <div class="segmentTitle">Full-Stack-Entwicklung diverser Content-Management-Systeme und Webanwendungen</div>
                 <div class="segmentDescription">Um den individuellen Bedürfnissen jedes Kunden gerecht zu werden, wurde
                     jedes Projekt von Grund auf neu entwickelt.
@@ -148,44 +161,18 @@
                     <div class="technologies">Typescript, React, Node.js, MongoDB, Elastisearch</div>
                 </div>
             </div>
-            <div class="letterSegmentEntry">
-                <a class="segmentTitle" href="https://appbase.hamburg" target="_blank">
-                    Homepage von Appbase Hamburg
-                    <div class="link"></div>
-                </a>
-                <div class="segmentDescription">Die neue Homepage sollte Kunden einen Vorgeschmack davon bieten, welchen
-                    Grad an Komplexität Appbase Hamburg sicher in einem User Interface umsetzen kann.
-                </div>
-                <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">
-                        Umsetzung des anspruchsvollen User Interfaces und dessen Mobil- sowie Performanceoptimierung
-                    </li>
-                    <li class="bulletPoint">
-                        Entwicklung des dahinter liegenden Content-Management-Systems
-                    </li>
-                </ul>
-                <div class="usedTechnologies">
-                    <div class="techTitle">genutzte Technologien:</div>
-                    <div class="technologies">JavaScript, React, Sass, Node.js</div>
-                </div>
-            </div>
         </div>
         <div class="letterSegment">
             <div class="header">
                 <span class="highlight">Erf</span><span>ahrung</span>
             </div>
             <div class="titleBar">
-                <div class="time">2016 - jetzt</div>
-                <div class="title">B. Sc. Technische Informatik</div>
-                <div class="position">HAW Hamburg</div>
-            </div>
-            <div class="letterSegmentEntry">
-                <ul class="segmentBulletPoints">
-                    <li class="bulletPoint">Fokus liegt auf embedded systems development mit C/C++</li>
-                </ul>
+                <div class="time">2020 - heute</div>
+                <div class="title">Qt Systems Developer</div>
+                <div class="position">Froglogic GmbH</div>
             </div>
             <div class="titleBar">
-                <div class="time">2016 - jetzt</div>
+                <div class="time">2016 - 2020</div>
                 <div class="title">Werkstudent Webentwicklung/Tooling</div>
                 <div class="position">Appbase Hamburg GmbH</div>
             </div>
@@ -194,6 +181,11 @@
                     <li class="bulletPoint">während des Semesters: 20h pro Woche</li>
                     <li class="bulletPoint">während der Semesterferien: 40h pro Woche</li>
                 </ul>
+            </div>
+            <div class="titleBar">
+                <div class="time">2016 - 2020</div>
+                <div class="title">Studium Technischer Informatik</div>
+                <div class="position">HAW Hamburg</div>
             </div>
         </div>
     </div>

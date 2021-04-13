@@ -116,7 +116,7 @@ body {
             flex-grow: 1;
             text-align: end; }
         body .page .letterColumn .letterSegment .letterSegmentEntry {
-          margin-bottom: 30px; }
+          margin-bottom: 24px; }
           body .page .letterColumn .letterSegment .letterSegmentEntry .segmentTitle {
             font-weight: bold;
             margin-bottom: 8px;
