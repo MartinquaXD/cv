@@ -2,9 +2,9 @@
   "name": "src",
   "version": "1.0.0",
   "scripts": {
-    "compile sass": "node-sass --watch src/scss -o src/css"
+    "compile sass": "sass --watch src/scss src/css"
   },
   "dependencies": {
-    "node-sass": "*"
+    "sass": "*"
   }
 }
