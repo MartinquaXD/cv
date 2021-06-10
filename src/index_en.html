@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./scss/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+    <div class="overviewColumn">
+        <div class="candidateName">Martin Beckmann</div>
+        <div class="position">Software Developer</div>
+        <div class="company">Fullstack with focus on<br>backend development</div>
+        <div class="contact">
+            <div class="contactRow">
+                <div class="contactImg telephone"></div>
+                <a href="tel:+4915201087786" class="contactText">+49 152 01087786</a>
+                <a href="tel:+4915201087786" class="link"></a>
+            </div>
+            <div class="contactRow">
+                <div class="contactImg email"></div>
+                <a href="mailto:martin.beckmann@protonmail.com" class="contactText">martin.beckmann@protonmail.com</a>
+                <a href="mailto:martin.beckmann@protonmail.com" class="link"></a>
+            </div>
+            <div class="contactRow">
+                <div class="contactImg git"></div>
+                <a href="https://github.com/MartinquaXD" target="_blank" class="contactText">github.com/MartinquaXD</a>
+                <a href="https://github.com/MartinquaXD" target="_blank" class="link"></a>
+            </div>
+            <div class="contactRow">
+                <div class="contactImg linkedIn"></div>
+                <a href="https://www.linkedin.com/in/beckmannmartin/" target="_blank" class="contactText">/in/beckmannmartin</a>
+                <a href="https://www.linkedin.com/in/beckmannmartin/" target="_blank" class="link"></a>
+            </div>
+        </div>
+        <div class="columnSegment">
+            <div class="header">
+                <div class="headerContent">Web Development</div>
+                <div class="headerLine"></div>
+            </div>
+            <div class="entryText">TypeScript</div>
+            <div class="entryText">React + Redux</div>
+            <div class="entryText">Node.js</div>
+            <div class="entryText">HTML5 / Sass</div>
+        </div>
+        <div class="columnSegment">
+            <div class="header">
+                <div class="headerContent">Systems Development</div>
+                <div class="headerLine"></div>
+            </div>
+            <div class="entryText">Rust</div>
+            <div class="entryText">C++</div>
+            <div class="entryText">Qt</div>
+        </div>
+        <div class="columnSegment">
+            <div class="header">
+                <div class="headerContent">Databases</div>
+                <div class="headerLine"></div>
+            </div>
+            <div class="entryText">MongoDB</div>
+            <div class="entryText">Elasticsearch</div>
+        </div>
+        <div class="columnSegment">
+            <div class="header">
+                <div class="headerContent">Soft Skills</div>
+                <div class="headerLine"></div>
+            </div>
+            <div class="entryText">Curious</div>
+            <div class="entryText">Versatile</div>
+            <div class="entryText">Motivated</div>
+            <div class="entryText">Creative</div>
+            <div class="entryText">Solution Oriented</div>
+            <div class="entryText">Open &amp; Approachable</div>
+        </div>
+        <div class="columnSegment">
+            <div class="header">
+                <div class="headerContent">Other</div>
+                <div class="headerLine"></div>
+            </div>
+            <div class="entryText">English / German</div>
+            <div class="entryText">Git</div>
+            <div class="entryText">Jira / Kanban</div>
+        </div>
+    </div>
+    <div class="letterColumn">
+        <div class="letterSegment">
+            <div class="header">
+                <span class="highlight">Pro</span><span>jects</span>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Initiated Evaluation of Rust as Language for Backend Development</div>
+                <div class="segmentDescription">To measure the performance overhead of Node.js I ported an existing server to Rust.</div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">up to 50% decreased latency</li>
+                    <li class="bulletPoint">dropping the V8 engine reduced RAM usage, binary size, startup time and CPU usage</li>
+                    <li class="bulletPoint">created a basis for fearless concurrency with Rust</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">used technologies:</div>
+                    <div class="technologies">Rust, Tokio, WebSockets</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Further Development of a Native Caching System for Android and iOS Apps</div>
+                <div class="segmentDescription">This component manages the communication with a custom backend as well as the caching
+                of received data.</div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">fixed bug which rarely caused unreliable network communication</li>
+                    <li class="bulletPoint">implemented immediate delivery of partly cached requests for snappier apps</li>
+                    <li class="bulletPoint">wrote unit- and integration-tests</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">used technologies:</div>
+                    <div class="technologies">C++ 14, WebSockets</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Design and Implementation Multiple Developer Tools</div>
+                <div class="segmentDescription">To speed up the development process and avoid common bugs, I designed new tools
+                and developed exsiting tools further.</div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">designed a schema-first approach for our custom backend library</li>
+                    <li class="bulletPoint">generated code for TypeScript, Kotlin und Swift</li>
+                    <li class="bulletPoint">developed the necessary infrastructure to do integration tests with Jest</li>
+                    <li class="bulletPoint">simple plugin for Jetbrains IDEs</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">used technologies:</div>
+                    <div class="technologies">TypeScript, Node.js, Jest, Java</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Replaced License Keys With Floating Licenses</div>
+                <div class="segmentDescription">To keep people from essentially stealing software by copying around
+                license keys, I implemented a floating license server which keeps track of concurrent uses.</div>
+                <ul class="segmentBulletPoints">
+                    <li class="bulletPoint">refactored license related code in huge legacy code base</li>
+                    <li class="bulletPoint">kept client compatibility with old and exotic compilers and operating systems</li>
+                    <li class="bulletPoint">increased revenue by preventing abuse of a trust based license system</li>
+                </ul>
+                <div class="usedTechnologies">
+                    <div class="techTitle">used technologies:</div>
+                    <div class="technologies">C++ 11, C++98, Qt 5</div>
+                </div>
+            </div>
+            <div class="letterSegmentEntry">
+                <div class="segmentTitle">Full Stack Development of Various Content Managment Systems and Web Applications</div>
+                <div class="segmentDescription">To cater to the needs of each customer every project was developed from the ground up.</div>
+                <div class="usedTechnologies">
+                    <div class="techTitle">used technologies:</div>
+                    <div class="technologies">TypeScript, React, Node.js, MongoDB, Elastisearch</div>
+                </div>
+            </div>
+        </div>
+        <div class="letterSegment">
+            <div class="header">
+                <span class="highlight">Exp</span><span>erience</span>
+            </div>
+            <div class="titleBar">
+                <div class="time">03.2020 - today</div>
+                <div class="title">Qt Systems Developer</div>
+                <div class="position">Froglogic / The Qt Company</div>
+            </div>
+            <div class="titleBar">
+                <div class="time">10.2016 - 03.2020</div>
+                <div class="title">Studied Computer Engineering</div>
+                <div class="position">HAW Hamburg</div>
+            </div>
+            <div class="titleBar">
+                <div class="time">06.2016 - 03.2020</div>
+                <div class="title">Working Student Web Development/Tooling</div>
+                <div class="position">Appbase Hamburg</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
