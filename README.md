@@ -6,4 +6,4 @@ The included cv.pdf is always the most recent exported version of this project. 
 project, install required packages with ```npm install``` and compile the style with ```npm run "compile sass""```.
 
 # CV
-![CV](src/cv.png)
+![CV](cv.png)
