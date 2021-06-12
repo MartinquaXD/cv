@@ -2,7 +2,8 @@
   "name": "src",
   "version": "1.0.0",
   "scripts": {
-    "compile sass": "sass --watch src/scss src/css"
+    "compile sass": "sass --watch src/scss src/css",
+    "generate-images": "convert -density 300 -depth 8 -quality 96 *.pdf -set filename:base \"%[basename]\" \"%[filename:base].png\""
   },
   "dependencies": {
     "sass": "*"
